@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>留学方案申请 - 聚培训</title>
+    <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
+    <link rel="canonical" href="http(s)://example.com">
+    <style mip-custom>
+    @media only screen and (min-width: 240px) { html { font-size: 75%;} } /* 12px */
+    @media only screen and (min-width: 320px) { html { font-size: 75% } } /* 12px */
+    @media only screen and (min-width: 360px) { html { font-size: 84.375%  } } /* 11.25px */
+    @media only screen and (min-width: 480px) { html { font-size: 112.5%;} } /* 15px */
+    @media only screen and (min-width: 640px) { html { font-size: 150%;} } /* 24px */
+    @media only screen and (min-width: 720px) { html { font-size: 168.75%;} } /* 27px */
+    
+    html,body{margin: 0;padding: 0;position:relative;width:100%;height:100%;-webkit-tap-highlight-color: rgba(0,0,0,0);font-family:\5FAE\8F6F\96C5\9ED1 !important;background:#f5f5f5;color:#55595c;}
+    html,body,menu,ul,ol,li,p,div,form,h1,h2,h3,h4,h5,h6,img,a img,input,textarea,fieldset{padding: 0;margin: 0;border: 0;font-weight:normal;}
+    ul li{list-style:none;}
+    a {color:#333;} 
+    a:hover{text-decoration:none;}
+    img{width:100%;}
+    a,img,i,span,li{-webkit-touch-callout: none;-webkit-tap-highlight-color: transparent;-webkit-user-select: none;}
+    div{-webkit-tap-highlight-color: transparent;}
+    .clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
+    .clearfix{zoom:1}
+    body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;b}
+    a{color:#55595c;text-decoration:none;}
+	.clear{ clear:both;}
+    .hidden{display: none;}
+    .mt10{ margin-top:10px;}
+	.ml5{ margin-left:5px;}
+	.ml10{ margin-left:10px;}
+    .required{ color:#FF0000;}
+
+	.head_bar{width:100%;height:40px;background:#fff;z-index:999;left:0;border-bottom: 1px solid #bbb;overflow: hidden;}
+	.head_bar p{width: 100%;    height: 44px;position: relative;margin: auto;background-color: #5e5e5e;}
+    .head_bar p a{font-size: 18px;text-align: center; margin-left: 18px;color: #ffffff; width: 60px;height: 40px;}
+	.mobile-back{height:40px;display: block;float: left;margin-top: 12.5px;width: 10px;margin-left: 20px;}
+    .mobile-back mip-img{width: 170px;height:20px;}
+	.head_bar p span{color: #fff;text-align: center;display: block;font-size: 18px;letter-spacing: 2px;line-height: 44px; padding-right: 23px;}
+    
+    .mobile-inquiry{padding: 30px 15px;}
+    .form-control{box-sizing: border-box;display: block;width: 100%;height: 40px;padding: 6px 12px;font-size: 14px;line-height: 1.5em;border: 1px solid #ccc;border-radius: 4px;}
+    .mobile-inquiry-title{color: #555;font-size: 20px;line-height: 1.5em;text-align: center;font-weight: bold;}
+    .form-horizontal{overflow:hidden;margin-top: 26px;text-align: left;}
+    .ajax-submit{display:block;margin: 20px auto 0 auto;width:50%;height:40px;line-height:40px;border-radius:4px;font-size: 16px;background:#ff9900;color:#fff;border:none;}
+	.form-control-static{width: 100%;overflow: hidden;}
+    .form-checkbox{display: block;float: left;width: 33%;height: 30px;line-height: 30px;overflow: hidden;}
+    .form-select{background: url('../skin/css/img/arrow.png') right center no-repeat;display: inline-block; width: 120px;height: 30px;overflow: hidden;border: solid 1px #ccc;}
+    .form-select .select-ele{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:transparent;border:none;padding-left:10px;width: 120px;height:100%;}
+    .inquiry_checkbox{box-sizing: border-box;display: block;float: left;margin-top: 8px;margin-right: 5px;width: 14px;height: 14px;border: 1px solid #ddd;border-radius: 2px;}
+	 .form-control{box-sizing: border-box;display: block;width: 100%;min-height: 40px;padding: 6px 12px;font-size: 14px;line-height: 1.5em;border: 1px solid #ccc;border-radius: 4px;}
+    .form-group{margin-bottom: 15px;}
+    .form-group > textarea{height: 100px;}
+	.new-tx{color: #FF0000;  margin-bottom: 10px; line-height: 24px;}
+	.tips-box{display: none; top: 20% !important;height:2.5rem;line-height:2.5rem;background-color: #000;color: #fff;margin:0 0.8889rem;opacity:0.7;filter:Alpha(opacity=70);}
+    .tips-box .tips-msg{text-align: center; }
+    </style>
+</head>
+<body>
+<!-- 正文 -->
+
+<div class="head_bar">
+    <p>
+        <mip-history history="back" class="mobile-back";><img src="../skin/css/img/mobile_back.png" width="10"></mip-history>
+        <span>留学方案申请 - 聚培训</span>
+    </p>
+</div>
+
+<div class="head_bar_fix"></div>
+<div class="mobile-inquiry">
+<h3 class="mobile-inquiry-title">填写基本信息，获取留学方案</h3>
+    <mip-jupeixun-customform method="post" action="" id="form-horizontal" class="form-horizontal">
+        <input type="hidden" name="formUrl" value="http://libaoan.m.jupeixun.cn/api/tryapply">
+        <input type="hidden" name="nationApiUrl" class="nationApiUrl" value="http://libaoan.m.jupeixun.cn/api/getnationchild">
+        <input type="hidden" name="sourceurl" id="sourceurl" value="">
+        <ul>
+            <li class="form-group">
+                <label class="form-label" for="type"><span class="required">*</span> 想去的国家：</label>
+                <div id="country" class="form-control-static">
+                	<p class="form-select-block">
+                		<span class="form-select">
+						<select name="state" class="state select-ele">
+							<option value="">请选择州</option>
+							<option value="1318">欧洲</option>
+							<option value="1319">美洲</option>
+							<option value="1322">澳洲</option>
+							<option value="1317">亚洲</option>
+						</select>
+						</span>
+						<span class="form-select ml5">
+	                	<select name="nation" class="nation select-ele">
+								<option value="">请选择国家</option>
+							</select>
+						</span>
+                	</p>
+                    <span class="form-help f_red"></span>
+                </div>
+            </li>
+            <li class="form-group">
+                <label class="form-label" for="uname"><span class="required">*</span> 姓名：</label>
+                <input type="text" class="form-control leng2" name="uname">
+                <span id="dtruename" class="form-help f_red"></span>
+            </li>
+            <li class="form-group">
+                <label class="form-label" for="tel"><span class="required">*</span> 电话：</label>
+                <input type="text" class="form-control leng2" name="tel">
+                <span id="dtelephone" class="form-help f_red"></span>
+            </li>
+            <li class="form-group">
+                <label class="form-label" for="contact"><span class="required">*</span> 微信或QQ：</label>
+                <input type="text" class="form-control leng2" name="contact">
+                <span id="dqq" class="form-help f_red"></span>
+            </li>
+            <li class="form-group">
+                <label class="form-label"> 留学需求：</label>
+                <textarea class="form-control" rows="3" name="content"></textarea>
+            </li>
+            <li class="form-group">
+                <input type="button" class="ajax-submit" value="确认以上信息并提交">
+            </li>
+     		<!-- <p class="new-tx">我们将在第一时间联系您</p> -->
+        </ul>
+        <mip-fixed type="top" class="tips-box">
+            <div class="tips-msg">这里是提示信息</div>
+        </mip-fixed>
+    </mip-jupeixun-customform>
+</div>
+
+<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+<script src="https://mipcache.bdstatic.com/static/v1/mip-form/mip-form.js" async="async"></script>
+<script src="https://c.mipcdn.com/static/v1/mip-jupeixun-customform/mip-jupeixun-customform.js" async="async"></script>
+
+</body>
+</html>
