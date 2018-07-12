@@ -32,29 +32,94 @@ div{-webkit-tap-highlight-color: transparent;}
 .clearfix{zoom:1}
 body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;}
 
-.header-top{}
+.mt10{margin-top:1rem;}
+.mt15{margin-top:1.5rem;}
+.mt20{margin-top:2rem;}
+.mt25{margin-top:2.5rem;}
+.mt30{margin-top:3rem;}
+.mb10{margin-top:1rem;}
+.mb15{margin-top:1.5rem;}
+.mb20{margin-top:2rem;}
+.mb25{margin-top:2.5rem;}
+.mb30{margin-top:3rem;}
+.ml10{margin-top:1rem;}
+.ml15{margin-top:1.5rem;}
+.ml20{margin-top:2rem;}
+.ml25{margin-top:2.5rem;}
+.ml30{margin-top:3rem;}
+.mr10{margin-top:1rem;}
+.mr15{margin-top:1.5rem;}
+.mr20{margin-top:2rem;}
+.mr25{margin-top:2.5rem;}
+.mr30{margin-top:3rem;}
+
+.pt10{margin-top:1rem;}
+.pt15{margin-top:1.5rem;}
+.pt20{margin-top:2rem;}
+.pt25{margin-top:2.5rem;}
+.pt30{margin-top:3rem;}
+.pb10{margin-top:1rem;}
+.pb15{margin-top:1.5rem;}
+.pb20{margin-top:2rem;}
+.pb25{margin-top:2.5rem;}
+.pb30{margin-top:3rem;}
+.pl10{margin-top:1rem;}
+.pl15{margin-top:1.5rem;}
+.pl20{margin-top:2rem;}
+.pl25{margin-top:2.5rem;}
+.pl30{margin-top:3rem;}
+.pr10{margin-top:1rem;}
+.pr15{margin-top:1.5rem;}
+.pr20{margin-top:2rem;}
+.pr25{margin-top:2.5rem;}
+.pr30{margin-top:3rem;}
+
+.header-top{border-bottom: 0.1rem solid #bbb;}
 .topmenu{height: 4rem;background-color:#0f7fbc;color:#fff;}
 .topmenu a{padding:0 1.2rem;line-height: 4rem; color:#fff;font-size: 1.8rem;}
 
 .school-header{position: relative;left:0;top:0;}
-.school-header .home-bg{position: absolute;left:0;top:0;z-index: 10;}
+.school-header .home-bg{position: relative;left:0;top:0;z-index: 10;}
 .school-base{width:100%;position:absolute;left:0;top:0;z-index: 100;}
 .school-base .title{margin-top:1rem;color:#fff;font-size:2.4rem;font-weight: bold; text-align: center;}
 .school-base .en-title{margin-top:0.5rem;color:#fff;font-size:1.6rem; text-align: center;}
-.school-base .logo{width:9em;height: 9em;}
+.school-base .desc-block{margin-top:1.5rem;color:#fff;}
+.school-base .logo-block{width:8rem;height: 8rem;border-radius: 4rem;float: left;display: inline-block;margin-left:2rem;}
+.school-base .logo{}
+.school-base .desc-ul{float: left;margin-left:1rem;}
+.school-base .desc-ul li{line-height: 2rem;}
 
+.school-menu{padding:0.5rem 0;background-color:#f1f2f4;border-bottom: 0.1rem solid #bbb;}
+.school-menu .menu{font-size:1.6rem;}
+.school-menu .menu li{height: 3rem;line-height: 3rem;margin:0 1.2rem;display: block;float: left;}
+.school-menu .menu li.curr,.school-menu .menu li.curr a{color:#0099ff;font-weight: bold;}
+
+.school-content{padding:1rem;}
+.school-content .titblock{height: 3rem;}
+.school-content .titblock .tit{line-height: 3rem; color: #0099ff;font-size:1.8rem;font-weight: bold;}
+.school-content .content-block{margin-top:1rem;margin-bottom:1rem;padding-bottom:1.5rem;border-bottom: 0.1rem solid #bbb;}
+.school-content .content-block .desc{line-height: 2.5rem;font-size: 1.6rem;}
+.school-content .params-ul{}
+.school-content .params-ul li{height: 3rem;line-height: 3rem;font-size: 1.6rem;}
+.school-content .special-block{}
+.school-content .special-block li{margin-bottom:1rem;padding-bottom:1rem;border-bottom: 0.1rem solid #ebebeb;}
+.school-content .special-block .link{line-height: 2.8rem; font-size: 1.6rem;font-weight: bold;}
+.school-content .special-block .ename{line-height: 2rem; color:#666;}
+.school-content .special-block .rows{line-height: 2rem;}
+.school-content .special-block .rows span{float: left;margin-right:1.5rem; display: inline-block;color:#666;}
+.school-content .special-block .rows .cor{color: #ff9900;}
 </style>
 </head>
 <body>
 
 <div class="header-top">
 	<div class="topmenu">
-		<a href="">首页</a>
-		<a href="">学校</a>
-		<a href="">专业</a>
-		<a href="">学院</a>
-		<a href="">攻略</a>
-		<a href="">案例</a>
+		<a href="" data-type="mip">首页</a>
+		<a href="" data-type="mip">学校</a>
+		<a href="" data-type="mip">专业</a>
+		<a href="" data-type="mip">学院</a>
+		<a href="" data-type="mip">攻略</a>
+		<a href="" data-type="mip">案例</a>
 	</div>
 </div>
 <!-- header-top end-->
@@ -66,7 +131,7 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;}
 			<h1 class="title">墨尔本大学</h1>
 			<h2 class="en-title">The University of Melbourne</h2>
 			<div class="desc-block">
-				<mip-img src="skin/image/logo_01.jpg" width="100%" class="logo"></mip-img>
+				<div class="logo-block"><mip-img src="skin/image/logo_01.jpg" width="100%" class="logo"></mip-img></div>
 				<div class="right-desc">
 					<ul class="desc-ul">
 						<li>学校星级：5颗星</li>
@@ -80,6 +145,76 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;}
 		<!-- school-base end -->
 	</div>
 	<!-- school-header end-->
+	<div class="clearfix"></div>
+	<div class="school-menu clearfix">
+		<ul class="menu">
+			<li class="curr"><a href="" data-type="mip">首页</a></li>
+			<li><a href="" data-type="mip">专业</a></li>
+			<li><a href="" data-type="mip">视频</a></li>
+			<li><a href="" data-type="mip">通知</a></li>
+			<li><a href="" data-type="mip">问答</a></li>
+		</ul>
+	</div>	
+	<!-- school-menu end-->
+	
+	<div class="school-content">
+		<div class="titblock"><h3 class="tit">墨尔本大学描述</h3></div>
+		<div class="content-block">
+			<div class="desc">
+				墨尔本大学的毕业生在澳洲的政治，文化和商业领域涌现许多杰出人物，包括两名诺贝尔医学奖获得者，两位澳洲的前总理，一些亚洲的商界和政界人士也毕业于墨尔本大学， 墨尔本大学为澳大利亚在亚太地区的经济发展作出了很大贡献 　　作为澳洲八大名校的核心盟校成员，墨尔本大学同时也是国际研究型大学联盟组织环太平洋大学联盟(APRU)的成员、亚太国际贸易教育暨研究联盟(PACIBER)的成员和Universitas 21的创始会员和秘书处所在地。建校已来，墨尔本大学已经培养出6名诺贝尔奖得主，其学术能力可见一斑
+			</div>
+		</div>
+		<!-- content-block end -->
+
+		<div class="titblock"><h3 class="tit">墨尔本大学基本信息</h3></div>
+		<div class="content-block">
+			<ul class="params-ul">
+				<li>英文名：<span>The University of Melbourne</span></li>
+				<li>立校性质：<span>公立大学</span></li>
+				<li>院校星级：<span>五星级</span></li>
+				<li>创建年份：<span>1853年</span></li>
+				<li>在校人数：<span>42182人</span></li> 
+				<li>咨询电话：<span>028-85922278</span></li>
+				<li>官方网站：<span>http://www.unimelb.edu.au/</span></li> 
+				<li>学校地址：<span class="sinfo">澳大利亚墨尔本市中心以北的帕克维尔</span></li>
+			</ul>
+		</div>
+		<!-- content-block end-->
+
+		<div class="titblock"><h3 class="tit">墨尔本大学优势专业</h3></div>
+		<div class="content-block">
+			<div class="special-block">
+				<ul>
+					<li class="clearfix">
+						<a class="link" href="">墨尔本大学管理（会计和金融）专业</a>
+						<p class="ename">Master of Management (Accounting and Finance)</p>
+						<div class="rows">
+							<span>学制：2年</span>
+							<span class="cor">专业排名：5</span>
+							<span class="cor">学校排名：42</span>
+						</div>
+					</li>
+					<li class="clearfix">
+						<a class="link" href="">墨尔本大学管理（会计和金融）专业</a>
+						<p class="ename">Master of Management (Accounting and Finance)</p>
+						<div class="rows">
+							<span>学制：2年</span>
+							<span class="cor">专业排名：5</span>
+							<span class="cor">学校排名：42</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- content-block end-->
+
+		<div class="titblock"><h3 class="tit">墨尔本大学资讯</h3></div>
+			
+
+
+	</div>
+	<!-- school-content end-->
+
 
 </div>
 <!-- school-main end -->
