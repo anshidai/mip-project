@@ -1,6 +1,6 @@
 # mip-jupeixun-sogou-ad2
 
-mip-jupeixun-sogou-ad2 组件说明
+mip-jupeixun-sogou-ad2 用来页面显示搜狗广告位
 
 标题|内容
 ----|----

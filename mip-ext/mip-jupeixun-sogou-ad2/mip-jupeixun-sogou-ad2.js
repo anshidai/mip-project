@@ -1,5 +1,6 @@
 /**
  * @file mip-jupeixun-sogou-ad2 组件
+ * 搜狗广告-不带宽高
  * @author
  */
 
